@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素显示模式转换</title>
+    <style>
+        a {
+            width: 250px;
+            height: 100px;
+            background-color: cadetblue;
+        }
+
+        .block {
+            width: 250px;
+            height: 100px;
+            background-color: rgb(114, 241, 102);
+            display: block;
+            /* display可以将行内元素a转换成块级元素 */
+        }
+
+        .inline {
+            width: 250px;
+            height: 100px;
+            background-color: cadetblue;
+            display: inline;
+        }
+        span{
+            width: 350px;
+            height: 80px;
+            background-color: rgb(129, 67, 245);
+            display: inline-block;
+            /* 转换为行内块元素 */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">a是行内元素，直接定义宽度和高度是不生效的</a><br>
+    <a href="#" class="block">可以在style中添加display属性，将其改为块级元素。</a>
+    <div class="inline">同理，也可以将块级元素转换为行内元素</div>
+    <span>相邻的行内块元素在同一行上,高度、行高、外边距以及内边距都可以控制</span>
+</body>
+
+</html>
